@@ -1490,6 +1490,27 @@ color: var(--text);
   .component-card { padding: 16px; min-height: auto; }
   .comp-icon { width: 48px; height: 48px; font-size: 24px; }
   .comp-title { font-size: 15px; }
+  @media (max-width: 768px) {
+.theory-layout {
+display: flex;
+flex-direction: column;
+}
+.theory-image {
+order: 1;
+margin-bottom: 24px;
+}
+.theory-content {
+order: 2;
+}
+.theory-content h3 {
+text-align: center;
+margin-top: 0;
+}
+.theory-content > p:first-of-type {
+text-align: center;
+font-size: 15px;
+margin-bottom: 20px;
+}
   
   /* Виправлення для карток drag-and-drop */
   .drag-item {
