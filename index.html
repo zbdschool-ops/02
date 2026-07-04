@@ -3230,7 +3230,7 @@ let progress = {
 
 const steps = [
   { id: 1, icon: '🔍', title: 'Стартова ситуація', tasks: 2 },
-  { id: 2, icon: '', title: 'Приховані ризики', tasks: 4 },
+  { id: 2, icon: '🚨', title: 'Приховані ризики', tasks: 4 },
   { id: 3, icon: '⚠️', title: 'Стратегія СТОП-ПОДУМАЙТЕ-ДІЙТЕ', tasks: 3 },
   { id: 4, icon: '🔄', title: 'Культура взаємодії', tasks: 4 },
   { id: 5, icon: '🧠', title: 'Відповідальний вибір', tasks: 4 },
@@ -3248,7 +3248,7 @@ function loadProgress() {
 }
 
 function saveProgress() {
-  localStorage.setItem('section2Progress', JSON.stringify(progress));
+  sessionStorage.setItem('section2Progress', JSON.stringify(progress));
   updateAllDisplays();
   renderStepNavigation();
 }
